@@ -21,45 +21,42 @@
   </header>
 
   <main class="shell">
-    <section class="hero">
+    <section class="hero home-hero">
       <div class="eyebrow">BLUE TEAM · DIGITAL · SECURITY</div>
       <h1>Flipping Bits, Evidence First</h1>
-      <p class="hero-copy">Aegis46 documents practical blue-team investigations from raw evidence to defensible findings covering digital forensics, malware analysis, network traffic and incident response.</p>
+      <p class="hero-copy">Practical blue team labs, tools and resources for digital forensics, malware analysis, threat intelligence and security research.</p>
     </section>
 
-    <section class="stats" aria-label="Site focus">
-      <div><strong>DFIR</strong><span>Digital forensics &amp; triage</span></div>
-      <div><strong>Malware</strong><span>Static &amp; dynamic analysis</span></div>
-      <div><strong>Network</strong><span>Traffic &amp; IOC analysis</span></div>
-      <div><strong>Evidence</strong><span>Reproducible findings</span></div>
-    </section>
-
-    <section class="section">
-      <div class="eyebrow">FEATURED INVESTIGATION</div>
-      <h2>From suspicious update to ransomware</h2>
-      <p class="section-intro">A full investigation tracing a malicious Slack lookalike through memory analysis, network traffic, malware reversing, ransomware execution and data exfiltration.</p>
-      <a class="lab-card" href="labs/funtech.html">
-        <div class="lab-card-main">
-          <div class="tag-row"><span class="tag status">COMPLETED</span><span class="tag">MALWARE</span><span class="tag">DFIR</span><span class="tag">NETWORK</span></div>
-          <h3>Funtech</h3>
-          <p>Evidence-led analysis of a typosquatted Slack update, downloader, ransomware payload and exfiltration activity.</p>
-          <div class="ioc-row"><span>slakc.com</span><span>104.244.42.193:7856</span><span>SHA-256 IOCs</span></div>
-        </div>
-        <div class="lab-card-side">Open case study <span class="arrow">→</span></div>
-      </a>
-    </section>
-
-    <section class="section methodology">
-      <div class="eyebrow">APPROACH</div>
-      <h2>Investigate. Validate. Document.</h2>
-      <div class="method-grid">
-        <article><span>01 · ACQUIRE</span><h3>Start with evidence</h3><p>Work from memory images, packet captures, files, logs and other available artefacts rather than assumptions.</p></article>
-        <article><span>02 · ANALYSE</span><h3>Correlate the story</h3><p>Use forensic tooling, reverse engineering and network analysis to connect individual artefacts into an attack timeline.</p></article>
-        <article><span>03 · REPORT</span><h3>Make findings useful</h3><p>Record IOCs, commands, timestamps, techniques and conclusions so the investigation can be reproduced and reviewed.</p></article>
+    <section class="home-investigations section">
+      <div class="eyebrow">RECENT INVESTIGATIONS</div>
+      <h2>Recent investigations</h2>
+      <div class="home-card-grid">
+        <a class="home-card" href="labs/funtech.html">
+          <div class="home-card-icon">▱</div>
+          <h3>Funtech Lab</h3>
+          <p>Digital forensics and malware analysis investigation from the Funtech lab environment.</p>
+          <span class="home-card-link">View lab&nbsp; →</span>
+        </a>
+        <a class="home-card" href="tools.html#forensics">
+          <div class="home-card-icon">⌕</div>
+          <h3>Digital Forensics</h3>
+          <p>Real-world investigations and forensic analysis using practical DFIR tooling and artefacts.</p>
+          <span class="home-card-link">View tools&nbsp; →</span>
+        </a>
+        <a class="home-card" href="tools.html#intelligence">
+          <div class="home-card-icon">◇</div>
+          <h3>Threat Intelligence</h3>
+          <p>OSINT, IOC analysis and threat research resources used to enrich investigations.</p>
+          <span class="home-card-link">View resources&nbsp; →</span>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="shell footer"><span>Aegis46 · Blue-team investigations</span><a href="https://github.com/aegis46/aegis46.github.io">Source on GitHub</a></footer>
+  <footer class="shell footer">
+    <span>Aegis46</span>
+    <span>Build&nbsp; · &nbsp;Investigate&nbsp; · &nbsp;Defend</span>
+    <a href="https://github.com/aegis46/aegis46.github.io">Source on GitHub</a>
+  </footer>
 </body>
 </html>
