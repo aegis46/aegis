@@ -1,1 +1,126 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aegis46 | Tools</title><link rel="stylesheet" href="assets/site.css"></head><body><header><a href="index.html">Aegis46</a><nav><a href="index.html">Home</a> <a href="labs/funtech.html">Labs</a> <a href="tools.html">Tools</a> <a href="https://github.com/aegis46/aegis">GitHub</a></nav></header><main><p>A46 TOOLBOX</p><h1>Tools &amp; resources</h1><p>Tools used across blue-team investigations, digital forensics, malware analysis, reverse engineering and threat intelligence.</p><h2>Digital Forensics &amp; Triage</h2><ul><li><a href="https://ericzimmerman.github.io">Eric Zimmerman Tools</a> — AmcacheParser, AppCompatCacheParser, JumpListExplorer, PECmd.</li><li><a href="https://nirsoft.net">NirSoft Tools</a> — BrowsingHistoryView, JumpListsView, WinPrefetchView.</li><li><a href="https://mitec.cz/wfa.html">Windows File Analyzer</a></li><li><a href="https://kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape">KAPE</a></li><li><a href="https://github.com/WithSecureLabs/chainsaw">Chainsaw</a></li></ul><h2>Dynamic Analysis &amp; Sysinternals</h2><ul><li><a href="https://learn.microsoft.com/en-us/sysinternals/">Sysinternals Suite</a></li><li><a href="https://github.com/mandiant/flare-vm">FlareVM</a></li><li><a href="https://github.com/Seabreg/Regshot">Regshot</a></li><li><a href="https://procdot.com">ProcDOT</a></li></ul><h2>Static Analysis &amp; Reverse Engineering</h2><ul><li><a href="https://hex-rays.com/ida-free/">IDA Freeware</a></li><li><a href="https://winitor.com">Pestudio</a></li><li><a href="https://github.com/dnSpy/dnSpy">dnSpy</a></li><li><a href="https://github.com/icsharpcode/ILSpy">ILSpy</a></li><li><a href="https://www.jetbrains.com/decompiler/">dotPeek</a></li><li><a href="https://reconstructer.org/code.html">OfficeMalScanner</a></li></ul><h2>Threat Intelligence, Network &amp; Utilities</h2><ul><li><a href="https://github.com/alexandreborges/malwoverview">Malwoverview</a></li><li><a href="https://www.wireshark.org">Wireshark</a></li><li><a href="https://cirt.net/Nikto2">Nikto</a></li><li><a href="https://gchq.github.io/CyberChef/">CyberChef</a></li></ul><h2>macOS Forensics &amp; Analysis</h2><ul><li><a href="https://github.com/n0fate/chainbreaker">Chainbreaker</a></li><li><a href="https://github.com/dlcowen/FSEventsParser">FSEventsParser</a></li><li><a href="https://github.com/dlcowen/FSEventsParser">macMRU-Parser</a></li><li><a href="https://github.com/ydkhatri/mac_apt">mac_apt</a></li></ul><h2>Public Resources</h2><h3>Malware</h3><ul><li><a href="https://bazaar.abuse.ch/browse/">MalwareBazaar</a></li><li><a href="https://www.threatminer.org/index.php">ThreatMiner</a></li><li><a href="https://hybrid-analysis.com/">Hybrid Analysis</a></li></ul><h3>Tools &amp; News</h3><ul><li><a href="https://www.virustotal.com/">VirusTotal</a></li><li><a href="https://isc.sans.edu/">SANS Internet Storm Center</a></li><li><a href="https://www.misp-project.org/">MISP</a></li><li><a href="https://censys.com/">Censys</a></li></ul><h3>Reports</h3><ul><li><a href="https://thedfirreport.com/">The DFIR Report</a></li></ul></main><footer>Aegis46 · Tools &amp; resources</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aegis46 toolbox — digital forensics, malware analysis, reverse engineering, network analysis and threat intelligence resources.">
+  <title>Aegis46 | Tools &amp; Resources</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">A46</span><span>Aegis46</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="labs/funtech.html">Labs</a>
+        <a class="active" href="tools.html">Tools</a>
+        <a href="https://github.com/aegis46/ae">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">A46 TOOLBOX</div>
+      <h1>Tools &amp;<br><span>resources.</span></h1>
+      <p class="hero-copy">The tools and public resources used across blue-team investigations, digital forensics, malware analysis, reverse engineering, network analysis and threat intelligence.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#forensics">Browse the toolbox</a>
+        <a class="button ghost" href="index.html">Back to Aegis46</a>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Tool categories">
+      <div><strong>DFIR</strong><span>Forensics &amp; triage</span></div>
+      <div><strong>Malware</strong><span>Analysis &amp; reversing</span></div>
+      <div><strong>Network</strong><span>Traffic &amp; intelligence</span></div>
+      <div><strong>macOS</strong><span>Forensics &amp; artefacts</span></div>
+    </section>
+
+    <section class="tool-category" id="forensics">
+      <div class="eyebrow">01 · DIGITAL FORENSICS</div>
+      <h2>Digital Forensics &amp; Triage</h2>
+      <p class="category-note">Core artefact parsing and triage tools for Windows investigations.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://ericzimmerman.github.io"><div class="tool-card-head"><h3>Eric Zimmerman Tools</h3><span class="tool-type">DFIR</span></div><p>AmcacheParser, AppCompatCacheParser, JumpListExplorer, PECmd and more.</p><span class="tool-url">ericzimmerman.github.io</span></a>
+        <a class="tool-card" href="https://nirsoft.net"><div class="tool-card-head"><h3>NirSoft Tools</h3><span class="tool-type">ARTEFACTS</span></div><p>BrowsingHistoryView, JumpListsView, WinPrefetchView and other Windows utilities.</p><span class="tool-url">nirsoft.net</span></a>
+        <a class="tool-card" href="https://mitec.cz/wfa.html"><div class="tool-card-head"><h3>Windows File Analyzer</h3><span class="tool-type">DFIR</span></div><p>Inspect and analyse common Windows file-system artefacts.</p><span class="tool-url">mitec.cz/wfa.html</span></a>
+        <a class="tool-card" href="https://kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape"><div class="tool-card-head"><h3>KAPE</h3><span class="tool-type">COLLECTION</span></div><p>Rapid collection and processing of forensic artefacts.</p><span class="tool-url">kroll.com · KAPE</span></a>
+        <a class="tool-card" href="https://github.com/WithSecureLabs/chainsaw"><div class="tool-card-head"><h3>Chainsaw</h3><span class="tool-type">LOG ANALYSIS</span></div><p>Fast hunting and detection across Windows event logs.</p><span class="tool-url">github.com/WithSecureLabs/chainsaw</span></a>
+      </div>
+    </section>
+
+    <section class="tool-category">
+      <div class="eyebrow">02 · DYNAMIC ANALYSIS</div>
+      <h2>Dynamic Analysis &amp; Sysinternals</h2>
+      <p class="category-note">Observe process behaviour, system changes and execution activity.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://learn.microsoft.com/en-us/sysinternals/"><div class="tool-card-head"><h3>Sysinternals Suite</h3><span class="tool-type">WINDOWS</span></div><p>Process, registry, file-system and system investigation utilities.</p><span class="tool-url">learn.microsoft.com · Sysinternals</span></a>
+        <a class="tool-card" href="https://github.com/mandiant/flare-vm"><div class="tool-card-head"><h3>FlareVM</h3><span class="tool-type">MALWARE LAB</span></div><p>Windows-based environment for malware analysis and reverse engineering.</p><span class="tool-url">github.com/mandiant/flare-vm</span></a>
+        <a class="tool-card" href="https://github.com/Seabreg/Regshot"><div class="tool-card-head"><h3>Regshot</h3><span class="tool-type">COMPARISON</span></div><p>Compare registry and file-system state before and after execution.</p><span class="tool-url">github.com/Seabreg/Regshot</span></a>
+        <a class="tool-card" href="https://procdot.com"><div class="tool-card-head"><h3>ProcDOT</h3><span class="tool-type">BEHAVIOUR</span></div><p>Visualise and correlate process activity from Procmon and network captures.</p><span class="tool-url">procdot.com</span></a>
+      </div>
+    </section>
+
+    <section class="tool-category">
+      <div class="eyebrow">03 · REVERSE ENGINEERING</div>
+      <h2>Static Analysis &amp; Reverse Engineering</h2>
+      <p class="category-note">Disassemble, decompile and inspect suspicious binaries and documents.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://hex-rays.com/ida-free/"><div class="tool-card-head"><h3>IDA Free</h3><span class="tool-type">RE</span></div><p>Interactive disassembler and static analysis environment.</p><span class="tool-url">hex-rays.com/ida-free</span></a>
+        <a class="tool-card" href="https://winitor.com"><div class="tool-card-head"><h3>PEStudio</h3><span class="tool-type">PE ANALYSIS</span></div><p>Static inspection of Windows executables and suspicious indicators.</p><span class="tool-url">winitor.com</span></a>
+        <a class="tool-card" href="https://github.com/dnSpy/dnSpy"><div class="tool-card-head"><h3>dnSpy</h3><span class="tool-type">.NET</span></div><p>Debugger and assembly editor for .NET applications.</p><span class="tool-url">github.com/dnSpy/dnSpy</span></a>
+        <a class="tool-card" href="https://github.com/icsharpcode/ILSpy"><div class="tool-card-head"><h3>ILSpy</h3><span class="tool-type">.NET</span></div><p>Open-source .NET assembly browser and decompiler.</p><span class="tool-url">github.com/icsharpcode/ILSpy</span></a>
+        <a class="tool-card" href="https://www.jetbrains.com/decompiler/"><div class="tool-card-head"><h3>dotPeek</h3><span class="tool-type">.NET</span></div><p>.NET decompiler and assembly browser from JetBrains.</p><span class="tool-url">jetbrains.com/decompiler</span></a>
+        <a class="tool-card" href="https://reconstructer.org/code.html"><div class="tool-card-head"><h3>OfficeMalScanner</h3><span class="tool-type">DOCUMENTS</span></div><p>Static analysis and scanning of suspicious Microsoft Office files.</p><span class="tool-url">reconstructer.org/code.html</span></a>
+      </div>
+    </section>
+
+    <section class="tool-category">
+      <div class="eyebrow">04 · NETWORK &amp; INTELLIGENCE</div>
+      <h2>Threat Intelligence, Network &amp; Utilities</h2>
+      <p class="category-note">Investigate network traffic, enrich indicators and transform data during analysis.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://github.com/alexandreborges/malwoverview"><div class="tool-card-head"><h3>Malwoverview</h3><span class="tool-type">THREAT INTEL</span></div><p>Command-line malware analysis and intelligence utility.</p><span class="tool-url">github.com/alexandreborges/malwoverview</span></a>
+        <a class="tool-card" href="https://www.wireshark.org"><div class="tool-card-head"><h3>Wireshark</h3><span class="tool-type">NETWORK</span></div><p>Deep packet inspection and network protocol analysis.</p><span class="tool-url">wireshark.org</span></a>
+        <a class="tool-card" href="https://cirt.net/Nikto2"><div class="tool-card-head"><h3>Nikto</h3><span class="tool-type">WEB</span></div><p>Web server scanning and security assessment utility.</p><span class="tool-url">cirt.net/Nikto2</span></a>
+        <a class="tool-card" href="https://gchq.github.io/CyberChef/"><div class="tool-card-head"><h3>CyberChef</h3><span class="tool-type">UTILITY</span></div><p>Decode, transform, analyse and manipulate data during investigations.</p><span class="tool-url">gchq.github.io/CyberChef</span></a>
+      </div>
+    </section>
+
+    <section class="tool-category">
+      <div class="eyebrow">05 · macOS</div>
+      <h2>macOS Forensics &amp; Analysis</h2>
+      <p class="category-note">Specialised tools for macOS artefacts, credentials and file-system activity.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://github.com/n0fate/chainbreaker"><div class="tool-card-head"><h3>Chainbreaker</h3><span class="tool-type">CREDENTIALS</span></div><p>Forensic utility for extracting useful artefacts from macOS keychains.</p><span class="tool-url">github.com/n0fate/chainbreaker</span></a>
+        <a class="tool-card" href="https://github.com/dlcowen/FSEventsParser"><div class="tool-card-head"><h3>FSEventsParser</h3><span class="tool-type">ARTEFACTS</span></div><p>Parse and investigate macOS FSEvents data.</p><span class="tool-url">github.com/dlcowen/FSEventsParser</span></a>
+        <a class="tool-card" href="https://github.com/dlcowen/FSEventsParser"><div class="tool-card-head"><h3>macMRU-Parser</h3><span class="tool-type">ARTEFACTS</span></div><p>Parse macOS recent-item and usage artefacts.</p><span class="tool-url">github.com/dlcowen/FSEventsParser</span></a>
+        <a class="tool-card" href="https://github.com/ydkhatri/mac_apt"><div class="tool-card-head"><h3>mac_apt</h3><span class="tool-type">DFIR</span></div><p>macOS forensic collection and analysis framework.</p><span class="tool-url">github.com/ydkhatri/mac_apt</span></a>
+      </div>
+    </section>
+
+    <section class="tool-category methodology">
+      <div class="eyebrow">06 · PUBLIC RESOURCES</div>
+      <h2>Research &amp; intelligence resources</h2>
+      <p class="category-note">Useful public services for malware research, indicator enrichment, security news and incident reporting.</p>
+      <div class="tool-grid">
+        <a class="tool-card" href="https://bazaar.abuse.ch/browse/"><div class="tool-card-head"><h3>MalwareBazaar</h3><span class="tool-type">MALWARE</span></div><p>Public malware sample and indicator repository.</p><span class="tool-url">bazaar.abuse.ch</span></a>
+        <a class="tool-card" href="https://www.threatminer.org/index.php"><div class="tool-card-head"><h3>ThreatMiner</h3><span class="tool-type">THREAT INTEL</span></div><p>Threat intelligence search and indicator enrichment.</p><span class="tool-url">threatminer.org</span></a>
+        <a class="tool-card" href="https://hybrid-analysis.com/"><div class="tool-card-head"><h3>Hybrid Analysis</h3><span class="tool-type">SANDBOX</span></div><p>Public malware analysis and sandboxing service.</p><span class="tool-url">hybrid-analysis.com</span></a>
+        <a class="tool-card" href="https://www.virustotal.com/"><div class="tool-card-head"><h3>VirusTotal</h3><span class="tool-type">INTEL</span></div><p>Multi-engine file, URL and indicator analysis.</p><span class="tool-url">virustotal.com</span></a>
+        <a class="tool-card" href="https://isc.sans.edu/"><div class="tool-card-head"><h3>SANS Internet Storm Center</h3><span class="tool-type">NEWS</span></div><p>Threat reports, diary entries and internet activity monitoring.</p><span class="tool-url">isc.sans.edu</span></a>
+        <a class="tool-card" href="https://www.misp-project.org/"><div class="tool-card-head"><h3>MISP</h3><span class="tool-type">CTI</span></div><p>Threat intelligence sharing and structured indicator management.</p><span class="tool-url">misp-project.org</span></a>
+        <a class="tool-card" href="https://censys.com/"><div class="tool-card-head"><h3>Censys</h3><span class="tool-type">DISCOVERY</span></div><p>Internet asset and service discovery for security research.</p><span class="tool-url">censys.com</span></a>
+        <a class="tool-card" href="https://thedfirreport.com/"><div class="tool-card-head"><h3>The DFIR Report</h3><span class="tool-type">REPORTS</span></div><p>Detailed incident reports and adversary tradecraft research.</p><span class="tool-url">thedfirreport.com</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <span>Aegis46 · Tools &amp; resources</span>
+    <a href="https://github.com/aegis46/ae">Source on GitHub</a>
+  </footer>
+</body>
+</html>
