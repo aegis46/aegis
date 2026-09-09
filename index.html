@@ -7,76 +7,12 @@
   <title>Aegis46 | Blue Team Investigations</title>
   <link rel="stylesheet" href="assets/site.css">
   <style>
-    .home-page .home-hero{padding-top:92px;padding-bottom:82px;text-align:center}
-    .home-page .home-hero .eyebrow{font-size:14px;margin-bottom:20px}
-    .home-page .home-hero h1{font-size:clamp(52px,6.5vw,76px);letter-spacing:-.055em;max-width:none;margin:0 auto;white-space:nowrap;font-weight:400}
-    .home-page .home-hero .hero-copy{max-width:700px;margin:25px auto 0;font-size:18px}
-    .home-investigations{border-top:1px solid var(--line);padding-top:32px;padding-bottom:88px}
-    .home-investigations>.eyebrow{display:none}
-    .home-investigations h2{font-size:40px;margin:0 0 28px;text-align:center;letter-spacing:-.04em;font-weight:400}
-    .home-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .home-card{min-height:238px;padding:28px 30px;text-decoration:none;color:var(--text);border:1px solid #16465a;border-radius:8px;background:linear-gradient(145deg,#07131c,#071019);transition:border-color .2s,transform .2s}
-    .home-card:hover{border-color:#28738b;transform:translateY(-2px)}
-    .home-card-icon{font-size:36px;line-height:1;color:var(--accent);margin-bottom:18px}
-    .home-card h3{font-size:25px;margin:0 0 10px;letter-spacing:-.03em;font-weight:400}
-    .home-card p{color:#9bb1bf;font-size:16px;line-height:1.55;margin:0;max-width:360px}
-    .home-card-link{display:block;color:var(--accent);font-size:16px;margin-top:22px}
-    .home-page .footer{padding-top:25px}
-    .home-page .footer>span:nth-child(2){color:var(--muted)}
-    @media(max-width:900px){.home-card-grid{grid-template-columns:1fr}.home-page .home-hero h1{font-size:clamp(48px,8vw,68px);white-space:normal}}
-    @media(max-width:700px){.home-page .home-hero{padding-top:68px}.home-page .home-hero .eyebrow{font-size:11px}.home-page .home-hero h1{font-size:clamp(42px,11vw,60px)}}
+    .home-page .home-hero{padding-top:92px;padding-bottom:82px;text-align:center}.home-page .home-hero .eyebrow{font-size:14px;margin-bottom:20px}.home-page .home-hero h1{font-size:clamp(52px,6.5vw,76px);letter-spacing:-.055em;max-width:none;margin:0 auto;white-space:nowrap;font-weight:400}.home-page .home-hero .hero-copy{max-width:700px;margin:25px auto 0;font-size:18px}.home-investigations{border-top:1px solid var(--line);padding-top:32px;padding-bottom:88px}.home-investigations>.eyebrow{display:none}.home-investigations h2{font-size:40px;margin:0 0 28px;text-align:center;letter-spacing:-.04em;font-weight:400}.home-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.home-card{min-height:238px;padding:28px 30px;text-decoration:none;color:var(--text);border:1px solid #16465a;border-radius:8px;background:linear-gradient(145deg,#07131c,#071019);transition:border-color .2s,transform .2s}.home-card:hover{border-color:#28738b;transform:translateY(-2px)}.home-card-icon{font-size:36px;line-height:1;color:var(--accent);margin-bottom:18px}.home-card h3{font-size:25px;margin:0 0 10px;letter-spacing:-.03em;font-weight:400}.home-card p{color:#9bb1bf;font-size:16px;line-height:1.55;margin:0;max-width:360px}.home-card-link{display:block;color:var(--accent);font-size:16px;margin-top:22px}.home-page .footer{padding-top:25px}.home-page .footer>span:nth-child(2){color:var(--muted)}@media(max-width:900px){.home-card-grid{grid-template-columns:1fr}.home-page .home-hero h1{font-size:clamp(48px,8vw,68px);white-space:normal}}@media(max-width:700px){.home-page .home-hero{padding-top:68px}.home-page .home-hero .eyebrow{font-size:11px}.home-page .home-hero h1{font-size:clamp(42px,11vw,60px)}}
   </style>
 </head>
 <body class="home-page">
-  <header class="topbar">
-    <div class="shell nav">
-      <a class="brand" href="/"><span class="brand-mark">A46</span><span>Aegis46</span></a>
-      <nav>
-        <a class="active" href="/">Home</a>
-        <a href="/labs/funtech.html">Labs</a>
-        <a href="/tools.html">Tools</a>
-        <a href="/threat-intel.html">Threat Intel</a>
-        <a href="https://github.com/aegis46/aegis46.github.io">GitHub</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="shell">
-    <section class="hero home-hero">
-      <div class="eyebrow">BLUE TEAM · DIGITAL · SECURITY</div>
-      <h1>Flipping Bits, Evidence First</h1>
-      <p class="hero-copy">Practical blue team labs, tools and resources for digital forensics, malware analysis, threat intelligence and security research.</p>
-    </section>
-
-    <section class="home-investigations section">
-      <h2>Explore</h2>
-      <div class="home-card-grid">
-        <a class="home-card" href="/labs/funtech.html">
-          <div class="home-card-icon">▱</div>
-          <h3>Labs</h3>
-          <p>Practical blue-team labs covering digital forensics, malware analysis and incident investigation.</p>
-          <span class="home-card-link">View labs&nbsp; →</span>
-        </a>
-        <a class="home-card" href="/tools.html">
-          <div class="home-card-icon">⌕</div>
-          <h3>Tools</h3>
-          <p>DFIR, malware analysis, reverse engineering, network analysis and security tools used in investigations.</p>
-          <span class="home-card-link">View tools&nbsp; →</span>
-        </a>
-        <a class="home-card" href="/threat-intel.html">
-          <div class="home-card-icon">◇</div>
-          <h3>Threat Intel</h3>
-          <p>OSINT, IOC enrichment, threat research and public intelligence resources for security investigations.</p>
-          <span class="home-card-link">View intel&nbsp; →</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="shell footer">
-    <span>Aegis46</span>
-    <span>Build&nbsp; · &nbsp;Investigate&nbsp; · &nbsp;Defend</span>
-    <a href="https://github.com/aegis46/aegis46.github.io">Source on GitHub</a>
-  </footer>
+  <header class="topbar"><div class="shell nav"><a class="brand" href="/"><span class="brand-mark">A46</span><span>Aegis46</span></a><nav><a class="active" href="/">Home</a><a href="/labs.html">Labs</a><a href="/tools.html">Tools</a><a href="/threat-intel.html">Threat Intel</a><a href="https://github.com/aegis46/aegis46.github.io">GitHub</a></nav></div></header>
+  <main class="shell"><section class="hero home-hero"><div class="eyebrow">BLUE TEAM · DIGITAL · SECURITY</div><h1>Flipping Bits, Evidence First</h1><p class="hero-copy">Practical blue team labs, tools and resources for digital forensics, malware analysis, threat intelligence and security research.</p></section><section class="home-investigations section"><h2>Explore</h2><div class="home-card-grid"><a class="home-card" href="/labs.html"><div class="home-card-icon">▱</div><h3>Labs</h3><p>Practical blue-team labs covering digital forensics, malware analysis and incident investigation.</p><span class="home-card-link">View labs&nbsp; →</span></a><a class="home-card" href="/tools.html"><div class="home-card-icon">⌕</div><h3>Tools</h3><p>DFIR, malware analysis, reverse engineering, network analysis and security tools used in investigations.</p><span class="home-card-link">View tools&nbsp; →</span></a><a class="home-card" href="/threat-intel.html"><div class="home-card-icon">◇</div><h3>Threat Intel</h3><p>OSINT, IOC enrichment, threat research and public intelligence resources for security investigations.</p><span class="home-card-link">View intel&nbsp; →</span></a></div></section></main>
+  <footer class="shell footer"><span>Aegis46</span><span>Build&nbsp; · &nbsp;Investigate&nbsp; · &nbsp;Defend</span><a href="https://github.com/aegis46/aegis46.github.io">Source on GitHub</a></footer>
 </body>
 </html>
